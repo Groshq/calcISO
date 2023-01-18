@@ -30,7 +30,7 @@ function clearDisplay() {
 
 function sum() {
     math = document.getElementById('display').innerHTML;
-    script = 'index.php?math=' + btoa(math);
+    script = 'app.php?math=' + btoa(math);
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", script, true);
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
